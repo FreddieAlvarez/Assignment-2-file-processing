@@ -1,0 +1,5 @@
+I really enjoyed the backend development course. The Node.js modules were challenging but rewarding.
+This course was harder than I expected. JavaScript in Node.js is different from browser JavaScript.
+Backend development is fascinating. I never realized how much work happens behind the scenes.
+The course moved quickly but covered important concepts. File processing seemed complicated initially.
+Great course for learning Node.js fundamentals. The examples were practical and relevant.
