@@ -25,6 +25,24 @@ function calculateAverage(numbers) {
     return sum / numbers.length;
 }
 
+function findHighest(arr) {
+	let highest = arr[0];
+	for(let i = 0; i < arr.length; i++) {
+		if(arr[i] > highest) {
+        	highest = arr[i];
+        }
+    }
+    return highest
+}
+
+function sumArr(arr) {
+	let sum = 0;
+	for(let i = 0; i < arr.length; i++) {
+		sum = sum + arr[i]
+    }
+	return sum;
+}
+
 module.exports = {
     add,
     subtract,
