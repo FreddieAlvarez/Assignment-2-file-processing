@@ -21,6 +21,12 @@ function countLines(text) {
     return lines.length;
 }
 
+const sampleText = fs.readFileSync("./data/sample-text.txt", "utf8");
+
+console.log("Word count:", countWords(sampleText));
+console.log("Longest word:", findLongestWord(sampleText));
+console.log("Line count:", countLines(sampleText));
+
 module.exports = {
     countWords,
     findLongestWord,
