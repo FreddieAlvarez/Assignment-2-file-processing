@@ -1,6 +1,7 @@
 const fs = require("fs");
 
 function countWords(text) {
+    if (!text.trim()) return 0; 
     const words = text.trim().split(/\s+/);
     return words.length;
 }
@@ -21,11 +22,13 @@ function countLines(text) {
     return lines.length;
 }
 
-const sampleText = fs.readFileSync("./data/sample-text.txt", "utf8");
+if (require.main === module) {
+    const sampleText = fs.readFileSync("./data/sample-text.txt", "utf8");
 
 console.log("Word count:", countWords(sampleText));
 console.log("Longest word:", findLongestWord(sampleText));
 console.log("Line count:", countLines(sampleText));
+}
 
 module.exports = {
     countWords,

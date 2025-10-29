@@ -1,5 +1,6 @@
 const fs = require("fs");
 
+//sum
 function calculateSum(numbers) {
     let sum = 0;
     for (const num of numbers) {
@@ -8,6 +9,7 @@ function calculateSum(numbers) {
     return sum;
 }
 
+//highest and lowest
 function findHighestAndLowest(numbers) {
     let highest = numbers[0];
     let lowest = numbers[0];
@@ -22,6 +24,7 @@ function findHighestAndLowest(numbers) {
     return { highest, lowest };
 }
 
+//average
 function calculateAverage(numbers) {
     const sum = calculateSum(numbers);
     return sum / numbers.length;
